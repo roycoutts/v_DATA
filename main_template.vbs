@@ -28,4 +28,14 @@ If WScript.ScriptName = "main_template.vbs" Then
 	stack.Push "Strawberry"
 
 	WScript.Echo stack.Pop()
+
+	Dim queue
+	Set queue = New v_Data_Queue
+
+	queue.Enqueue "Dog"
+	queue.Enqueue "Cat"
+	queue.Enqueue "Bird"
+	queue.Enqueue "Lizard"
+
+	WScript.Echo queue.Dequeue()
 End If

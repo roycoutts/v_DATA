@@ -2,6 +2,6 @@
 ' Include "v_Data_Collection"
 ' Include "v_Data_Dictionary"
 ' Include "v_Data_List"
-' Include "v_Data_Queue"
+Include "v_Data_Queue"
 ' Include "v_Data_Recordset"
 Include "v_Data_Stack"
