@@ -19,7 +19,10 @@ End Sub
 If WScript.ScriptName = "main_template.vbs" Then
 	Include "v_Data"
 
-	Dim stack
+	Dim stack, _
+		queue, _
+		collection
+
 	Set stack = New v_Data_Stack
 
 	stack.Push "Apple"
@@ -29,7 +32,6 @@ If WScript.ScriptName = "main_template.vbs" Then
 
 	WScript.Echo stack.Pop()
 
-	Dim queue
 	Set queue = New v_Data_Queue
 
 	queue.Enqueue "Dog"
@@ -38,4 +40,12 @@ If WScript.ScriptName = "main_template.vbs" Then
 	queue.Enqueue "Lizard"
 
 	WScript.Echo queue.Dequeue()
+
+	Set collection = New v_Data_Collection
+
+	collection.Add "Car"
+	collection.Add True
+	collection.Add 342
+
+	WScript.Echo collection(2)
 End If
