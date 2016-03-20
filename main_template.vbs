@@ -21,7 +21,8 @@ If WScript.ScriptName = "main_template.vbs" Then
 
 	Dim stack, _
 		queue, _
-		collection
+		collection, _
+		dictionary
 
 	Set stack = New v_Data_Stack
 
@@ -48,4 +49,13 @@ If WScript.ScriptName = "main_template.vbs" Then
 	collection.Add 342
 
 	WScript.Echo collection(2)
+
+	Set dictionary = New v_Data_Dictionary
+
+	dictionary.Add "Key 1", "Item 1"
+	dictionary.Add "Key 2", "Item 2"
+	dictionary.Add "Key 3", "Item 3"
+	dictionary.Add "Key 4", "Item 4"
+
+	WScript.Echo dictionary("Key 3")
 End If
