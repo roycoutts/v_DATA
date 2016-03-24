@@ -22,7 +22,8 @@ If WScript.ScriptName = "main_template.vbs" Then
 	Dim stack, _
 		queue, _
 		collection, _
-		dictionary
+		dictionary, _
+		list
 
 	Set stack = New v_Data_Stack
 
@@ -58,4 +59,15 @@ If WScript.ScriptName = "main_template.vbs" Then
 	dictionary.Add "Key 4", "Item 4"
 
 	WScript.Echo dictionary("Key 3")
+
+	Set list = New v_Data_List
+
+	list.Add "Point", 1
+	list.Add "Point Cloud", 2
+	list.Add "Curve", 4
+	list.Add "Surface", 8
+	list.Add "Polysurface", 16
+	list.Add "Mesh", 32
+
+	WScript.Echo list.GetByIndex(1)
 End If
