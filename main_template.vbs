@@ -23,7 +23,8 @@ If WScript.ScriptName = "main_template.vbs" Then
 		queue, _
 		collection, _
 		dictionary, _
-		list
+		list, _
+		arraylist
 
 	Set stack = New v_Data_Stack
 
@@ -45,7 +46,7 @@ If WScript.ScriptName = "main_template.vbs" Then
 
 	Set collection = New v_Data_Collection
 
-	collection.Add "Car"
+	collection.Add "Tree"
 	collection.Add True
 	collection.Add 342
 
@@ -70,4 +71,14 @@ If WScript.ScriptName = "main_template.vbs" Then
 	list.Add "Mesh", 32
 
 	WScript.Echo list.GetByIndex(1)
+
+	Set arraylist = New v_Data_ArrayList
+
+	arraylist.Add "Train"
+	arraylist.Add "Bus"
+	arraylist.Add "Car"
+	arraylist.Add "Bicycle"
+	arraylist.Add "Boat"
+
+	WScript.Echo arraylist(2)
 End If
