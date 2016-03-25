@@ -25,7 +25,8 @@ If WScript.ScriptName = "main_template.vbs" Then
 		dictionary, _
 		list, _
 		arraylist, _
-		arr
+		arr, _
+		hash
 
 	Set stack = New v_Data_Stack
 
@@ -88,4 +89,13 @@ If WScript.ScriptName = "main_template.vbs" Then
 	arr.FromArray Array("New York", "Chicago", "Los Angelos", "Miami", "Toronto")
 
 	WScript.Echo arr(3)
+
+	Set hash = New v_Data_HashTable
+
+	hash.Add "FirstName", "Sam"
+	hash.Add "LastName", "Smith"
+	hash.Add "Title", "Supervisor"
+	hash.Add "EmployeeCode", 1457345
+
+	WScript.Echo hash("Title")
 End If
