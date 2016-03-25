@@ -19,7 +19,7 @@ System.Collections.Stack
 The OLE Programmatic Identifiers (ProgIDs) for these data structures are tedious to remember and sometimes difficult to implement (due to lack of documentation). v_Data provides a common interface for the ProgIDs to quickly access and use these data structures in VBScript.
 
 
-v_Data_Array:
+**v_Data_Array:**
 ```
 Set arr = New v_Data_Array
 
@@ -34,7 +34,7 @@ Miami
 ```
 
 
-v_Data_ArrayList:
+**v_Data_ArrayList:**
 ```
 Set arraylist = New v_Data_ArrayList
 
@@ -53,7 +53,7 @@ Car
 ```
 
 
-v_Data_Collection:
+**v_Data_Collection:**
 ```
 Set collection = New v_Data_Collection
 
@@ -70,7 +70,7 @@ Output:
 ```
 
 
-v_Data_Dictionary:
+**v_Data_Dictionary:**
 ```
 Set dictionary = New v_Data_Dictionary
 
@@ -88,7 +88,7 @@ Item 3
 ```
 
 
-v_Data_List:
+**v_Data_List:**
 ```
 Set list = New v_Data_List
 
@@ -108,7 +108,7 @@ Output:
 ```
 
 
-v_Data_Queue:
+**v_Data_Queue:**
 ```
 Set queue = New v_Data_Queue
 
@@ -126,7 +126,7 @@ Dog
 ```
 
 
-v_Data_Stack:
+**v_Data_Stack:**
 ```
 Set stack = New v_Data_Stack
 
