@@ -87,6 +87,20 @@ Output:
 Item 3
 ```
 
+**v_Data_HashTable:**
+```
+Set hash = New v_Data_HashTable
+
+hash.Add "FirstName", "Sam"
+hash.Add "LastName", "Smith"
+hash.Add "Title", "Supervisor"
+hash.Add "EmployeeCode", 1457345
+```
+
+Output:
+```
+Supervisor
+```
 
 **v_Data_List:**
 ```
