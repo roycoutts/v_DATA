@@ -24,7 +24,8 @@ If WScript.ScriptName = "main_template.vbs" Then
 		collection, _
 		dictionary, _
 		list, _
-		arraylist
+		arraylist, _
+		arr
 
 	Set stack = New v_Data_Stack
 
@@ -81,4 +82,10 @@ If WScript.ScriptName = "main_template.vbs" Then
 	arraylist.Add "Boat"
 
 	WScript.Echo arraylist(2)
+
+	Set arr = New v_Data_Array
+
+	arr.FromArray Array("New York", "Chicago", "Los Angelos", "Miami", "Toronto")
+
+	WScript.Echo arr(3)
 End If

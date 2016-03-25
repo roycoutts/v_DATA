@@ -50,7 +50,7 @@ Class v_Data_Collection
 		For i = 0 To UBound(pCollection)
 			If IsObject(varItem) And IsObject(pCollection(i)) Then
 				If pCollection(i) Is varItem Then blnContains = True
-			ElseIf Not IsObject(Collection(i)) And Not IsObject(varItem) Then
+			ElseIf Not IsObject(pCollection(i)) And Not IsObject(varItem) Then
 				If pCollection(i) = varItem Then blnContains = True
 			End If
 			If blnContains Then Exit For
