@@ -1,7 +1,7 @@
 # v_Data
 A library of data structures for VBScript.
 
-The v_Data class libraries provide a set of managed wrapper objects around native VBScript and Microsoft .NET data structures:
+The v_Data class libraries provide a set of wrapper objects around native VBScript and Microsoft .NET data structures:
 
 VBScript:
 ```
@@ -27,6 +27,11 @@ arr.FromArray Array("New York", "Chicago", "Los Angelos", "Miami", "Toronto")
 WScript.Echo arr(3)
 ```
 
+Output:
+```
+Miami
+```
+
 v_Data_ArrayList:
 ```
 Set arraylist = New v_Data_ArrayList
@@ -40,6 +45,11 @@ arraylist.Add "Boat"
 WScript.Echo arraylist(2)
 ```
 
+Output:
+```
+Car
+```
+
 v_Data_Collection:
 ```
 Set collection = New v_Data_Collection
@@ -49,6 +59,11 @@ collection.Add True
 collection.Add 342
 
 WScript.Echo collection(2)
+```
+
+Output:
+```
+342
 ```
 
 v_Data_Dictionary:
@@ -61,6 +76,11 @@ dictionary.Add "Key 3", "Item 3"
 dictionary.Add "Key 4", "Item 4"
 
 WScript.Echo dictionary("Key 3")
+```
+
+Output:
+```
+Item 3
 ```
 
 v_Data_List:
@@ -77,6 +97,11 @@ list.Add "Mesh", 32
 WScript.Echo list.GetByIndex(1)
 ```
 
+Output:
+```
+32
+```
+
 v_Data_Queue:
 ```
 Set queue = New v_Data_Queue
@@ -89,6 +114,11 @@ queue.Enqueue "Lizard"
 WScript.Echo queue.Dequeue()
 ```
 
+Output:
+```
+Dog
+```
+
 v_Data_Stack:
 ```
 Set stack = New v_Data_Stack
@@ -99,4 +129,9 @@ stack.Push "Banana"
 stack.Push "Strawberry"
 
 WScript.Echo stack.Pop()
+```
+
+Output:
+```
+Strawberry
 ```
